@@ -231,6 +231,8 @@ local payNow
 
 function M.onLogin( player )
 
+    player:inform("Hello Illarion Development!")
+
     --Temporary: Warp players from old Noobia to new newbie spawn
     if player.pos.z == 100 then --Old Noobia
         player:warp(position(702, 283, 0))
